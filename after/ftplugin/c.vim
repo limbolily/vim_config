@@ -15,7 +15,7 @@ inoremap /** /**<CR><CR><Backspace>/<Esc>ka<Space><Space>
 set cinoptions=:0,Ls,g0,t0,cs,Cs,(0,Ws
 
 "若光标所在位置到行尾都是空字符，则返回第一个参数，否则返回第二个参数
-:function NonNullEndSelect(arg1, arg2)
+:function! NonNullEndSelect(arg1, arg2)
 :  let pos = match(getline("."),'\S\s*$',col(".")-1)
 :  if pos < 0
 :    let ret = a:arg1
@@ -26,7 +26,7 @@ set cinoptions=:0,Ls,g0,t0,cs,Cs,(0,Ws
 :endfunction
 
 "若光标所在行都是空字符，则返回第一个参数，否则返回第二个参数
-:function NullBeginSelect(arg1, arg2)
+:function! NullBeginSelect(arg1, arg2)
 :  let pos = match(getline("."), '\S')
 :  if pos < 0
 :    let ret = a:arg1
