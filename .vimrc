@@ -10,13 +10,11 @@ set ruler
 syntax on
 
 "颜色方案
-colorscheme evening
-
-"制表符宽度
-set tabstop=4
-
-"空格代替tab的宽度
-set softtabstop=4
+if has ('gui_running')
+  colorscheme desert
+else
+  colorscheme evening
+endif
 
 "打开文件类型检测
 filetype on
@@ -26,6 +24,14 @@ filetype indent on
 "设置编码
 set fencs=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
+"设置文件行尾格式
+set fileformat=unix
+
 "默认的缩进
 set sw=2
 set expandtab
+set tabstop=2
+set softtabstop=2
+
+"设置退格键在插入模式下均有效
+set backspace=indent,eol,start
