@@ -1,9 +1,10 @@
 "设定缩进
 set cindent
-set sw=4
+set sw=2
 
 "使用空格代替tab
 set expandtab
+set softtabstop=2
 
 "启用vimgdb
 ru macros/gdb_mappings.vim
