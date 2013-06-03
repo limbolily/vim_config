@@ -4,6 +4,7 @@ set sw=2
 
 "使用空格代替tab
 set expandtab
+set tabstop=2
 set softtabstop=2
 
 "启用vimgdb
