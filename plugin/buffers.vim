@@ -37,6 +37,8 @@ function! s:DisplayBuffers()
   setlocal noinsertmode
   silent let buflist = s:GetBuffersToList()
   call setline(1,buflist)
+  "map cr to select buffer
+  :noremap <buffer> <CR> :call <SID>SelectBuffer()<CR>
   setlocal nomodifiable
 endfunction
 
@@ -55,9 +57,6 @@ endfunction
 
 " map C-Tab to display buffers
 :noremap <S-Tab> :call <SID>DisplayBuffers()<CR>
-
-"map cr to select buffer
-:noremap <CR> :call <SID>SelectBuffer()<CR>
 
 " restore compatible-options
 let &cpo = s:save_cpo
