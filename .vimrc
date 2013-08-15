@@ -35,3 +35,6 @@ set softtabstop=2
 
 "设置退格键在插入模式下均有效
 set backspace=indent,eol,start
+"设置状态栏
+set statusline=%F\ [BUFN=%n]\ [FENC=%{&fenc}]\ [FT=%{&ft}]\ [FF=%{&ff}]\ [LINE=%l]\ [COL=%c]\ [LPERC=%p]
+set laststatus=2
