@@ -1,0 +1,12 @@
+[submodule "bundle/vim-pathogen"]
+	path = bundle/vim-pathogen
+	url = ../vim-pathogen.git
+[submodule "bundle/vim_cpp"]
+	path = bundle/vim_cpp
+	url = ../vim_cpp.git
+[submodule "bundle/vim_buffers"]
+	path = bundle/vim_buffers
+	url = ../vim_buffers.git
+[submodule "bundle/vim_cdoc"]
+	path = bundle/vim_cdoc
+	url = ../vim_cdoc.git

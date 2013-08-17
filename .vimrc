@@ -1,3 +1,7 @@
+"使用pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 "显示行号
 set nu
 "显示列号
