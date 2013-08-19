@@ -10,3 +10,6 @@
 [submodule "bundle/vim_cdoc"]
 	path = bundle/vim_cdoc
 	url = ../vim_cdoc.git
+[submodule "bundle/clang_complete"]
+	path = bundle/clang_complete
+	url = ../clang_complete.git
