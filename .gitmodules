@@ -10,3 +10,6 @@
 [submodule "bundle/vim_cdoc"]
 	path = bundle/vim_cdoc
 	url = ../vim_cdoc.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = /Volumes/PENDRIVE/repository/vim/nerdtree.git/
