@@ -42,3 +42,6 @@ set backspace=indent,eol,start
 "设置状态栏
 set statusline=%F\ [BUFN=%n]\ [FENC=%{&fenc}]\ [FT=%{&ft}]\ [FF=%{&ff}]\ [LINE=%l]\ [COL=%c]\ [LPERC=%p]
 set laststatus=2
+
+"windows initialization
+call windows#Initialize()
