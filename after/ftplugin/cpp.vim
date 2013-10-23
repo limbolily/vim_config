@@ -4,7 +4,7 @@ function! s:SetOptions()
 endfunction
 
 "return arg1 if all null characters from cursor to the end of line
-function! s:NonNullEndSelect(arg1, arg2)
+function! NonNullEndSelect(arg1, arg2)
   let pos = match(getline("."),'\S\s*$',col(".")-1)
   if pos < 0
     let ret = a:arg1
@@ -50,6 +50,8 @@ function! s:KeyMaps()
     \s:tag_list_buffer_name . "\", 1)<CR>"
   execute "nnoremap <Leader>ne :call windows#ShowInEditionWindows(\"" .
     \bufname(winbufnr(0)) . "\")<CR>"
+  execute "inoremap <expr> { NullBeginSelect(\'{<CR>}<Esc>O\', " .
+         \"NonNullEndSelect(\'{}<Esc>i\',\'{\'))"
 endfunction
 
 function! s:CppInitialize()
