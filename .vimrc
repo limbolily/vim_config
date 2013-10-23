@@ -45,3 +45,9 @@ set laststatus=2
 
 "windows initialization
 call windows#Initialize()
+
+"clang_complete option
+let g:clang_auto_user_options="compile_commands.json"
+
+"tag list option
+let Tlist_Show_One_File = 1
