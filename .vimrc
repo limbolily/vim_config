@@ -43,6 +43,9 @@ set backspace=indent,eol,start
 set statusline=%F\ [BUFN=%n]\ [FENC=%{&fenc}]\ [FT=%{&ft}]\ [FF=%{&ff}]\ [LINE=%l]\ [COL=%c]\ [LPERC=%p]
 set laststatus=2
 
+"设置不使用swapfile
+set noswapfile
+
 "windows initialization
 call windows#Initialize()
 
