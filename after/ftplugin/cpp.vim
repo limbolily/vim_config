@@ -52,6 +52,7 @@ function! s:KeyMaps()
     \bufname(winbufnr(0)) . "\")<CR>"
   execute "inoremap <expr> { NullBeginSelect(\'{<CR>}<Esc>O\', " .
          \"NonNullEndSelect(\'{}<Esc>i\',\'{\'))"
+  execute "inoremap /** /**<CR><CR><Backspace>/<Esc>ka<Space><Space>"
 endfunction
 
 function! s:CppInitialize()
