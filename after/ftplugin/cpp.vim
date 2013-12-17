@@ -1,6 +1,7 @@
 function! s:SetOptions()
   set cindent
   set cinoptions=:0,Ls,g0,t0,cs,Cs,(0,Ws
+  set bomb
 endfunction
 
 "return arg1 if all null characters from cursor to the end of line
