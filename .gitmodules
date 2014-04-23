@@ -24,7 +24,7 @@
 	url = ../clang_complete.git
 [submodule "bundle/vim_todo_txt"]
 	path = bundle/vim_todo_txt
-	url = /Volumes/PENDRIVE/repository/vim/todo.txt-vim.git
+	url = ../todo.txt-vim.git
 [submodule "bundle/vim-qml"]
 	path = bundle/vim-qml
 	url = ../vim-qml.git
