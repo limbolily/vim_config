@@ -28,3 +28,6 @@
 [submodule "bundle/vim-qml"]
 	path = bundle/vim-qml
 	url = ../vim-qml.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = ../vim-markdown.git
