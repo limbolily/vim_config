@@ -17,7 +17,7 @@ syntax on
 if has ('gui_running')
   colorscheme desert
 else
-  colorscheme evening
+  colorscheme torte
 endif
 
 "打开文件类型检测
@@ -45,6 +45,9 @@ set laststatus=2
 
 "设置不使用swapfile
 set noswapfile
+
+"设置高亮显示当前行
+set cursorline
 
 "windows initialization
 call windows#Initialize()

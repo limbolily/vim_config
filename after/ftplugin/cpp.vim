@@ -65,5 +65,5 @@ function! s:CppInitialize()
   call s:KeyMaps()
 endfunction
 
-autocmd BufWinEnter *.h,*.hpp,*.hxx,*.c,*.cpp,*.cxx nested
+autocmd BufWinEnter *.h,*.hpp,*.hxx,*.c,*.cpp,*.cxx,*.cc nested
   \ call s:CppInitialize()
