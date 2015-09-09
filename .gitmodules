@@ -31,3 +31,9 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = ../vim-markdown.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = ../YouCompleteMe.git
+[submodule "bundle/vim-compiledb-path"]
+	path = bundle/vim-compiledb-path
+	url = ../vim-compiledb-path.git
