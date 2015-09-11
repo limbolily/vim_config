@@ -60,6 +60,22 @@ nnoremap <Leader>gh :YcmCompleter GoToInclude<CR>
 nnoremap <Leader>gd :YcmCompleter GoToDeclaration<CR>
 nnoremap <Leader>gD :YcmCompleter GoToDefinition<CR>
 
+"vimtex setting
+let g:tex_flavor = 'latex'
+
+if has("mac")
+  let g:vimtex_view_general_viewer
+    \ = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+  let g:vimtex_view_general_options = '@line @pdf @tex'
+endif
+
+if !exists('g:ycm_semantic_triggers')
+  let g:ycm_semantic_triggers = {}
+endif
+let g:ycm_semantic_triggers.tex = [
+      \ 're!\\[A-Za-z]*(ref|cite)[A-Za-z]*([^]]*])?{([^}]*, ?)*'
+      \ ]
+
 "Init nerd tree
 let s:nerd_tree_buffer_name = "NERD_tree_1"
 function! s:InitializeNerdTree()
