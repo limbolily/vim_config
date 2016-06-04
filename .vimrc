@@ -60,3 +60,30 @@ let g:clang_complete_auto = 0
 
 "tag list option
 let Tlist_Show_One_File = 1
+
+"Init nerd tree
+let s:nerd_tree_buffer_name = "NERD_tree_1"
+function! s:InitializeNerdTree()
+  if (bufnr(s:nerd_tree_buffer_name) == -1)
+    NERDTree
+    quit
+  endif
+endfunction
+
+function! s:KeyMaps()
+  execute "nnoremap <Leader>nt :call windows#ShowInNavigationWindows(\'" .
+    \s:nerd_tree_buffer_name . "\', 0)<CR>"
+  execute "nnoremap <Leader>ne :call windows#ShowInEditionWindows(\'" .
+    \bufname(winbufnr(0)) . "\')<CR>"
+  execute "nnoremap <Leader>nr :call windows#ShowInEditionWindows(\'" .
+    \bufname(winbufnr(0)) . "\', \'%\')<CR>"
+endfunction
+
+function! s:Initialize()
+  call s:InitializeNerdTree()
+  call windows#ShowInNavigationWindows(s:nerd_tree_buffer_name, 0)
+  call s:KeyMaps()
+endfunction
+
+autocmd BufWinEnter *
+  \ call s:Initialize()
