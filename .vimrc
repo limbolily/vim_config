@@ -52,12 +52,6 @@ set cursorline
 "windows initialization
 call windows#Initialize()
 
-"clang_complete option
-let g:clang_auto_user_options = "compile_commands.json"
-let g:clang_snippets = 1
-let g:clang_snippets = "calng_complete"
-let g:clang_complete_auto = 0
-
 "tag list option
 let Tlist_Show_One_File = 1
 
