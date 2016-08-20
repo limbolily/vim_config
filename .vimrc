@@ -76,6 +76,11 @@ let g:ycm_semantic_triggers.tex = [
       \ 're!\\[A-Za-z]*(ref|cite)[A-Za-z]*([^]]*])?{([^}]*, ?)*'
       \ ]
 
+"YCM Mapping
+nnoremap <Leader>gh :YcmCompleter GoToInclude<CR>
+nnoremap <Leader>gd :YcmCompleter GoToDeclaration<CR>
+nnoremap <Leader>gD :YcmCompleter GoToDefinition<CR>
+
 "Init nerd tree
 let s:nerd_tree_buffer_name = "NERD_tree_1"
 function! s:InitializeNerdTree()
