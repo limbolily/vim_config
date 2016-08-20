@@ -19,9 +19,6 @@
 [submodule "bundle/taglist"]
 	path = bundle/taglist
 	url = ../taglist.git
-[submodule "bundle/clang_complete"]
-	path = bundle/clang_complete
-	url = ../clang_complete.git
 [submodule "bundle/vim_todo_txt"]
 	path = bundle/vim_todo_txt
 	url = ../todo.txt-vim.git
@@ -31,3 +28,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = ../vim-markdown.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = ../YouCompleteMe.git
