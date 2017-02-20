@@ -44,6 +44,10 @@ function! s:KeyMaps()
   execute "inoremap <expr> { NullBeginSelect(\'{<CR>}<Esc>O\', " .
          \"NonNullEndSelect(\'{}<Esc>i\',\'{\'))"
   execute "inoremap /** /**<CR><CR><Backspace>/<Esc>ka<Space><Space>"
+  execute "nnoremap <Leader>gd :YcmCompleter GoToDeclaration<CR>"
+  execute "nnoremap <Leader>gD :YcmCompleter GoToDefinition<CR>"
+  execute "nnoremap <Leader>gi :YcmCompleter GoToInclude<CR>"
+  execute "nnoremap <Leader>gt :YcmCompleter GetType<CR>"
 endfunction
 
 function! s:CppInitialize()
