@@ -98,9 +98,21 @@ let g:ycm_semantic_triggers.tex = [
       \ ]
 
 "Init nerd tree
+function! NERDTreeYankCurrentNode()
+    let n = g:NERDTreeFileNode.GetSelected()
+    if n != {}
+        call setreg('*', n.path.str())
+    endif
+endfunction
+
 let s:nerd_tree_buffer_name = "NERD_tree_1"
 function! s:InitializeNerdTree()
   if (bufnr(s:nerd_tree_buffer_name) == -1)
+    call NERDTreeAddKeyMap({
+      \ 'key': 'yy',
+      \ 'callback': 'NERDTreeYankCurrentNode',
+      \ 'quickhelpText': 'put full path of current node into the * register' })
+
     NERDTree
     quit
   endif
