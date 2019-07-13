@@ -27,6 +27,7 @@ filetype indent on
 
 "设置编码
 set fencs=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set encoding=utf-8
 
 "设置文件行尾格式
 set fileformat=unix
